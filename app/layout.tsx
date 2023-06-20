@@ -1,5 +1,6 @@
 import "./styles/globals.css";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export const metadata = {
   title: "Renzo Viscio",
@@ -16,6 +17,7 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

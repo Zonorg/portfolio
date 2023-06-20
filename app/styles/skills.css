@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #cccccc;
+  padding: 20px 0;
+  margin: 50px;
+  border-radius: 90% 10%;
   justify-content: center;
 }
 
@@ -12,9 +16,8 @@
 }
 
 .card {
-  height: 200px;
+  height: 220px;
   width: 300px;
-
   background-color: #fafafa;
   padding: 20px;
   border-radius: 4px;
@@ -25,6 +28,10 @@
 
 .card:hover {
   transform: translateY(-5px);
+}
+
+.skill-icon {
+  color: #c80815;
 }
 
 .card h2 {
