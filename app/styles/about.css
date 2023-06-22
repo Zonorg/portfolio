@@ -6,3 +6,114 @@
 .about h1 {
   margin-bottom: 20px;
 }
+
+.wrapper {
+  display: inline-flex;
+  margin: 100px 0 0 0;
+  align-items: center;
+}
+
+.wrapper .icon {
+  margin: 0 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.wrapper .icon span {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  z-index: 2;
+  display: block;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  line-height: 70px;
+}
+
+.wrapper .linkedin:hover span {
+  background-color: #0077b5;
+}
+
+.wrapper .instagram:hover span {
+  background-color: #e4405f;
+}
+
+.wrapper .github:hover span {
+  background-color: #444;
+}
+
+.wrapper .icon span .social-icon {
+  font-size: 25px;
+}
+
+.wrapper .icon:hover span .linkedin,
+.wrapper .icon:hover span .instagram,
+.wrapper .icon:hover span .github {
+  color: #fff;
+}
+
+.wrapper .icon .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 18px;
+  color: #fff;
+  padding: 10px 18px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .linkedin .tooltip {
+  background-color: #0077b5;
+}
+
+.wrapper .instagram .tooltip {
+  background-color: #e4405f;
+}
+
+.wrapper .github .tooltip {
+  background-color: #444;
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -70px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.wrapper .icon .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.wrapper .linkedin .tooltip::before {
+  background-color: #0077b5;
+}
+
+.wrapper .instagram .tooltip::before {
+  background-color: #e4405f;
+}
+
+.wrapper .github .tooltip::before {
+  background-color: #444;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover span {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
