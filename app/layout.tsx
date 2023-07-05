@@ -1,7 +1,6 @@
 import "./styles/globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import DragScroll from "./components/DragScroll";
 
 export const metadata = {
   title: "Renzo Viscio",
@@ -16,7 +15,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <DragScroll />
         <Header />
         {children}
         <Footer />
