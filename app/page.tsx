@@ -18,9 +18,9 @@ function ProjectImage({ src }: ProjectImageProps) {
 }
 
 export default function Home() {
-  const generateImagePath = (index: number): string => `/project-${index}.jpg`;
 
-  const totalImages = 3;
+  // const generateImagePath = (index: number): string => `/project-${index}.jpg`;
+  // const totalImages = 3;
 
   return (
     <main className="w-full py-20 flex flex-col justify-start items-center">
@@ -32,7 +32,7 @@ export default function Home() {
           <h1 className="text-8xl font-semibold max-md:text-5xl">
             Web developer
           </h1>
-          <p className="text-lg">I'm a front-end developer</p>
+          <p className="text-lg">I&apos;m a front-end developer</p>
         </div>
         <div className="mt-16 w-full">
           <h2 className="font-medium text-3xl">Checkout my projects</h2>
