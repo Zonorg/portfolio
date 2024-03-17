@@ -13,8 +13,18 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      animation: {
+        translateUp: 'translateUp 0.5s ease-out',
+      },
+      keyframes: {
+        translateUp: {
+          '0%': { transform: 'translateY(60px)' },
+          '100%': { transform: 'translateY(0)' },
+        },
+      },
     },
   },
   plugins: [],
 };
+
 export default config;
