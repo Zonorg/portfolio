@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  width: 100%;  
+  width: 100%;
 }
 
 body {
@@ -24,8 +24,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
-
-.header_navigation {
-  border-bottom: 5px #ff5277 solid;
 }

@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Karma } from "next/font/google";
+import { Enriqueta } from "next/font/google";
 import Header from "./header/layout";
 import Footer from "./footer/layout";
 import "./globals.css";
 
-const roboto = Karma({
+const lato = Enriqueta({
   weight: ["400", "500", "700"],
   subsets: ["latin"],
 });
@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body className={lato.className}>
         <Header />
         {children}
         <Footer />
