@@ -87,7 +87,7 @@ export default function Projects() {
               />
             </Link>
 
-            <p>Dj Mariana Bo`&apos;`s Official Store</p>
+            <p>Dj Mariana Bo&apos;s Official Store</p>
             <Link href="/projects/marianabo" className="hover:font-bold">
               Read more
             </Link>
