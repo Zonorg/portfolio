@@ -18,7 +18,7 @@ export default function About() {
           />
 
           <p className="text-2xl">
-            Hi, I'm Renzo Viscio, a passionate web developer based in San
+            Hi, I&apos;m Renzo Viscio, a passionate web developer based in San
             Rafael, Mendoza, Argentina. With a focus on frontend development, I
             bring a blend of creativity and technical expertise to every
             project.
