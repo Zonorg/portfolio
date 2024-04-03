@@ -20,6 +20,11 @@ body {
   background-color: rgb(var(--background-rgb));
 }
 
+::selection {
+  background-color: #14b8a6;
+  color: #ffffff;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

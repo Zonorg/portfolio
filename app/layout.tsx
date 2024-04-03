@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Enriqueta } from "next/font/google";
-import Header from "./header/layout";
-import Footer from "./footer/layout";
+import Header from "./components/header/layout";
+import Footer from "./components/footer/layout";
 import "./globals.css";
 
 const lato = Enriqueta({
