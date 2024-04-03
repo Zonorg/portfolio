@@ -212,7 +212,6 @@ export default function Projects() {
                 size={35}
               />
             </Link>
-
             <p>
               Delete Technology Group: Experts in secure data erasure. Trusted
               by governments and organizations worldwide.
