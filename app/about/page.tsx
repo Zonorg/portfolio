@@ -61,7 +61,7 @@ export default function About() {
           </p>
           <h2 className="font-medium text-3xl mt-8">Experience:</h2>
           <p className="text-xl">
-            I've worked on various web development projects, from redesigning
+            I&apos;ve worked on various web development projects, from redesigning
             and optimizing websites to creating online stores on platforms like{" "}
             <Link
               href="https://www.shopify.com/"
@@ -85,8 +85,8 @@ export default function About() {
           <h2 className="font-medium text-3xl mt-8">Looking Forward:</h2>
           <p className="text-xl">
             Excited to continue growing as a developer and tackle new
-            challenges. If you're interested in collaboration or have any
-            questions, feel free to reach out. Let's create something amazing
+            challenges. If you&apos;re interested in collaboration or have any
+            questions, feel free to reach out. Let&apos;s create something amazing
             together!
           </p>
         </div>
