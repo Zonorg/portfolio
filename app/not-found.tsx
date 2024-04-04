@@ -9,7 +9,10 @@ export default function notFound() {
         <p className="text-xl mt-10">
           404 Error. It seems that the page you are looking for does not exist.
         </p>
-        <Link href="/" className="bg-pink-700 rounded p-4 hover:bg-pink-600">
+        <Link
+          href="/"
+          className="bg-pink-700 font-medium rounded px-4 py-2 hover:bg-pink-600"
+        >
           Go back home
         </Link>
       </div>

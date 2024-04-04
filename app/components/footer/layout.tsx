@@ -10,7 +10,10 @@ export default function Footer() {
           <Link href="https://github.com/Zonorg" target="_blank">
             <FaGithub size={20} />
           </Link>
-          <Link href="https://www.linkedin.com/in/renzo-viscio-b69a13217/" target="_blank">
+          <Link
+            href="https://www.linkedin.com/in/renzo-viscio-b69a13217/"
+            target="_blank"
+          >
             <FaLinkedin size={20} />
           </Link>
         </div>

@@ -16,17 +16,13 @@ body {
   width: 100%;
 }
 
-footer {
-  margin-top: auto;
-}
-
 body {
   color: rgb(var(--foreground-rgb));
   background-color: rgb(var(--background-rgb));
 }
 
 ::selection {
-  background-color: #14b8a6;
+  background-color: #db2777;
   color: #ffffff;
 }
 

@@ -17,14 +17,14 @@ const ProjectCard: React.FC<Project> = ({
   title,
   description,
 }) => (
-  <div className="project_card flex flex-col justify-center items-center gap-3">
-    <div className="hover:scale-105 transition ease-in-out duration-300 relative">
+  <div className="project_card flex flex-col justify-center items-center gap-3 shadow-2xl">
+    <div className="hover:scale-105 transition ease-in-out duration-300 relative shadow-2xl">
       <Image
         src={src}
         alt={alt}
         width={600}
         height={600}
-        className="object-cover h-60 w-96 border-none rounded-t-xl"
+        className="object-cover h-60 w-96 border-none rounded-xl"
       />
       <div className="absolute inset-0 opacity-0 px-2 gap-3 hover:opacity-100 bg-black bg-opacity-50 flex flex-col justify-center items-center transition-opacity duration-300 rounded-xl">
         <Link href={link} target="_blank">
@@ -34,12 +34,10 @@ const ProjectCard: React.FC<Project> = ({
           />
         </Link>
         <p>{description}</p>
+        <p className="font-medium text-center">{title}</p>
         {/* <Link href={link} className="hover:font-bold">
           Read more
         </Link> */}
-      </div>
-      <div className="bg-zinc-900 w-96 p-2 rounded-b-xl">
-        <p className="font-medium text-center">{title}</p>
       </div>
     </div>
   </div>

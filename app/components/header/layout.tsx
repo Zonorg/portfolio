@@ -3,13 +3,39 @@ import Image from "next/image";
 import Link from "next/link";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { IoClose } from "react-icons/io5";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function Header() {
   const pathname = usePathname();
-  const isActive = (href: string) => {
-    return pathname === href;
+  const isActive = (href: string) => pathname === href;
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+
+  const variants = {
+    open: { x: 0 },
+    closed: { x: "-100%" },
   };
+
+  const closeMenu = () => setIsOpen(false);
+
+  const generateLink = (href: string, text: string) => (
+    <Link
+      onClick={closeMenu}
+      href={href}
+      className={`text-lg max-lg:text-3xl font-medium hover:border-b-4 hover:border-b-pink-600 transition duration-300 ${
+        isActive(href)
+          ? "border-b-4 border-b-pink-600"
+          : "border-b-4 border-transparent"
+      }`}
+    >
+      {text}
+    </Link>
+  );
 
   return (
     <header className="header w-full flex justify-center">
@@ -27,50 +53,32 @@ export default function Header() {
           </span>
           <RiVerifiedBadgeFill size={25} color="#1da1f2" />
         </Link>
-        <Link href="#">
-          <GiHamburgerMenu size={30} className="lg:hidden" />
-        </Link>
-        <div className="menu_header flex gap-10 max-lg:hidden">
-          <Link
-            href="/"
-            className={`hover:border-b-4 hover:border-b-pink-600 transition duration-300 ${
-              isActive("/")
-                ? "border-b-4 border-b-pink-600"
-                : "border-b-4 border-transparent"
-            }`}
+        <div className="hidden lg:flex gap-10">
+          {generateLink("/", "Home")}
+          {generateLink("/#projects", "Projects")}
+          {generateLink("/contact", "Contact")}
+          {generateLink("about", "About")}{" "}
+        </div>
+        <div className="lg:hidden">
+          <button onClick={toggleMenu}>
+            <GiHamburgerMenu size={30} />
+          </button>
+          <motion.div
+            className="menu_header flex flex-col gap-10 z-10 bg-black fixed inset-y-0 right-0 transform translate-x-full overflow-auto transition-transform duration-200 ease-in-out"
+            style={{ width: "100%" }}
+            animate={isOpen ? "open" : "closed"}
+            variants={variants}
           >
-            Home
-          </Link>
-          <Link
-            href="/#projects"
-            className={`hover:border-b-4 hover:border-b-pink-600 transition duration-300 ${
-              isActive("/projects")
-                ? "border-b-4 border-b-pink-600"
-                : "border-b-4 border-transparent"
-            }`}
-          >
-            Projects
-          </Link>
-          <Link
-            href="#contact"
-            className={`hover:border-b-4 hover:border-b-pink-600 transition duration-300 ${
-              isActive("/contact")
-                ? "border-b-4 border-b-pink-600"
-                : "border-b-4 border-transparent"
-            }`}
-          >
-            Contact
-          </Link>
-          <Link
-            href="about"
-            className={`hover:border-b-4 hover:border-b-pink-600 transition duration-300 ${
-              isActive("/about")
-                ? "border-b-4 border-b-pink-600"
-                : "border-b-4 border-transparent"
-            }`}
-          >
-            About
-          </Link>
+            <button onClick={toggleMenu}>
+              <IoClose size={40} className="absolute right-0 mt-10 mr-12" />
+            </button>
+            <div className="flex flex-col gap-5 m-auto">
+              {generateLink("/", "Home")}
+              {generateLink("/#projects", "Projects")}
+              {generateLink("/contact", "Contact")}
+              {generateLink("about", "About")}
+            </div>
+          </motion.div>
         </div>
       </div>
     </header>
