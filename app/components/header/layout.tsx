@@ -70,9 +70,9 @@ export default function Header() {
             variants={variants}
           >
             <button onClick={toggleMenu}>
-              <IoClose size={40} className="absolute right-0 mt-10 mr-12" />
+              <IoClose size={40} className="absolute right-0 mt-10 mr-2" />
             </button>
-            <div className="flex flex-col gap-5 m-auto">
+            <div className="flex flex-col gap-5 mt-32 mx-auto">
               {generateLink("/", "Home")}
               {generateLink("/#projects", "Projects")}
               {generateLink("/contact", "Contact")}
