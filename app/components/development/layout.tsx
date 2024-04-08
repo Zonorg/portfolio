@@ -67,7 +67,7 @@ export default function Development() {
       link: "https://lauketours.com/",
       title: "Lauke Tours",
       description:
-        "Lauketours is designed for the use of tourist guides, where they can manage and plan their own tourist routes..",
+        "Lauketours is designed for the use of tourist guides, where they can manage and plan their own tourist routes.",
     },
   ];
 
