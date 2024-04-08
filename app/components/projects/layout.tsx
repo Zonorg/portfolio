@@ -84,6 +84,14 @@ export default function Projects() {
       description:
         "Through spiritual connection and solidarity, mano con mano impact communities through workshops, collaborations, and sustainable projects, fostering personal growth and societal well-being.",
     },
+    {
+      src: "/projects/control.jpg",
+      alt: "Control Match",
+      link: "https://controlmatch.com.mx/",
+      title: "Control Match",
+      description:
+        "The platform streamlines freight matching, efficiently connecting clients and providers. Using advanced algorithms, it links loads with ideal units in real-time, providing digital delivery evidence and seamless API integration.",
+    },
   ];
 
   return (
