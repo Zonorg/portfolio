@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { IoOpenOutline } from "react-icons/io5";
 
-interface Development {
+interface Educational {
   src: string;
   alt: string;
   link: string;
@@ -10,7 +10,7 @@ interface Development {
   description: string;
 }
 
-const ProjectCard: React.FC<Development> = ({
+const ProjectCard: React.FC<Educational> = ({
   src,
   alt,
   link,
@@ -43,31 +43,22 @@ const ProjectCard: React.FC<Development> = ({
   </div>
 );
 
-export default function Development() {
-  const projects: Development[] = [
+export default function Educational() {
+  const projects: Educational[] = [
     {
-      src: "/projects/withsecure.jpg",
-      alt: "WithSecure",
-      link: "https://www.expertic.ai/withsecure?hs_preview=KNqMqYfH-161188345931",
-      title: "WithSecure™",
-      description:
-        "WithSecure™ Elements: Simplifying cybersecurity, strengthening defenses. Gain real-time visibility and proactive protection across endpoints and cloud applications.",
+      src: "/projects/saldo.jpg",
+      alt: "Saldo",
+      link: "https://zg-currency-caculator.vercel.app/",
+      title: "Saldo",
+      description: "Currency Calculator",
     },
     {
-      src: "/projects/delete.jpg",
-      alt: "Delete Technology",
-      link: "https://www.deletetechnology.com/-temporary-slug-bb7af0f4-0669-41f6-ae0e-cd3238fda02f?hs_preview=dMnNoQlr-159659264682",
-      title: "Delete Technology",
+      src: "/projects/electroshop.jpg",
+      alt: "Electroshop",
+      link: "https://www.linkedin.com/feed/update/urn:li:activity:7061449669389787136/",
+      title: "Electroshop",
       description:
-        "Delete Technology Group: Experts in secure data erasure. Trusted by governments and organizations worldwide.",
-    },
-    {
-      src: "/projects/lauke.jpg",
-      alt: "Lauke",
-      link: "https://lauketours.com/",
-      title: "Lauke Tours",
-      description:
-        "Lauketours is designed for the use of tourist guides, where they can manage and plan their own tourist routes..",
+        "E-commerce platform that allows users to conduct accurate searches, compare products and process secure transactions from the comfort of their home or office.",
     },
   ];
 

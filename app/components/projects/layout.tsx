@@ -69,11 +69,12 @@ export default function Projects() {
       description: "Dj Mariana Bo's Official Store",
     },
     {
-      src: "/projects/saldo.jpg",
-      alt: "Saldo",
-      link: "https://zg-currency-caculator.vercel.app/",
-      title: "Saldo",
-      description: "Currency Calculator",
+      src: "/projects/bitdefender.jpg",
+      alt: "Bitdefender",
+      link: "https://www.bitdefender.lat/",
+      title: "Bitdefender",
+      description:
+        "Global cybersecurity leader since 2001, protecting 500M+ systems in 150+ countries. Explore the offerings for protection, enhance business security, discover technology, or get support.",
     },
     {
       src: "/projects/mano.jpg",
@@ -82,14 +83,6 @@ export default function Projects() {
       title: "Mano con Mano",
       description:
         "Through spiritual connection and solidarity, mano con mano impact communities through workshops, collaborations, and sustainable projects, fostering personal growth and societal well-being.",
-    },
-    {
-      src: "/projects/electroshop.jpg",
-      alt: "Electroshop",
-      link: "https://www.linkedin.com/feed/update/urn:li:activity:7061449669389787136/",
-      title: "Electroshop",
-      description:
-        "E-commerce platform that allows users to conduct accurate searches, compare products and process secure transactions from the comfort of their home or office.",
     },
   ];
 

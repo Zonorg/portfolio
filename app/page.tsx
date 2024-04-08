@@ -1,5 +1,6 @@
 import Projects from "./components/projects/layout";
 import Development from "./components/development/layout";
+import Educational from "./components/educational/layout";
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
@@ -45,6 +46,8 @@ export default function Home() {
           <Projects />
           <h2 className="font-medium text-3xl">In development</h2>
           <Development />
+          <h2 className="font-medium text-3xl">Educational Projects</h2>
+          <Educational />
         </div>
         <div className="home_bottom">
           <Link
