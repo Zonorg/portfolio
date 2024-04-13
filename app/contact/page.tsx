@@ -1,16 +1,26 @@
 "use client";
-import { useState } from "react";
+import { useState, ChangeEvent, FormEvent, useEffect } from "react";
+import emailjs from "@emailjs/browser";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import Image from "next/image";
 
-export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
+interface FormData {
+  from_name: string;
+  from_email: string;
+  message: string;
+}
+
+export default function Contact(): JSX.Element {
+  const [formData, setFormData] = useState<FormData>({
+    from_name: "",
+    from_email: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [messageSent, setMessageSent] = useState(false);
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     setFormData({
       ...formData,
@@ -18,15 +28,46 @@ export default function Contact() {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(formData);
+    setIsSubmitting(true);
+
+    emailjs
+      .sendForm(
+        "portfolio",
+        "portfolio_temp_wofrc8m",
+        e.currentTarget,
+        "orPc7-IqQewECHePE"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setMessageSent(true);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      )
+      .finally(() => {
+        setIsSubmitting(false);
+      });
+
     setFormData({
-      name: "",
-      email: "",
+      from_name: "",
+      from_email: "",
       message: "",
     });
   };
+
+  useEffect(() => {
+    let timer: ReturnType<typeof setTimeout>;
+    if (messageSent) {
+      timer = setTimeout(() => {
+        setMessageSent(false);
+      }, 3000);
+    }
+    return () => clearTimeout(timer);
+  }, [messageSent]);
 
   return (
     <div className="contact_content py-20 w-2/3 mx-auto animate-translateUp mb-32 max-md:mb-8 max-md:py-0 max-md:w-11/12">
@@ -36,9 +77,9 @@ export default function Contact() {
           <div className="mb-4">
             <input
               type="text"
-              id="name"
-              name="name"
-              value={formData.name}
+              id="from_name"
+              name="from_name"
+              value={formData.from_name}
               onChange={handleChange}
               placeholder="Name"
               className="w-full p-2 border border-gray-300 text-stone-900 rounded-md focus:outline-none focus:border-gray-500"
@@ -48,9 +89,9 @@ export default function Contact() {
           <div className="mb-4">
             <input
               type="email"
-              id="email"
-              name="email"
-              value={formData.email}
+              id="from_email"
+              name="from_email"
+              value={formData.from_email}
               onChange={handleChange}
               placeholder="Email"
               className="w-full p-2 border border-gray-300 text-stone-900 rounded-md focus:outline-none focus:border-gray-500"
@@ -72,9 +113,20 @@ export default function Contact() {
           <button
             type="submit"
             className="px-4 py-2 bg-pink-700 font-medium rounded-md hover:bg-pink-600 focus:outline-none focus:bg-gray-600"
+            disabled={isSubmitting}
           >
-            Submit
+            {isSubmitting ? (
+              <AiOutlineLoading3Quarters className="animate-spin" />
+            ) : (
+              <span>Submit</span>
+            )}
           </button>
+          {messageSent && (
+            <p className="mt-2 text-pink-600 font-bold text-md">
+              Thank you for contacting me! I will be in touch with you as soon
+              as possible.
+            </p>
+          )}
         </form>
         <video
           src="/contact-video.mp4"
