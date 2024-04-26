@@ -79,7 +79,7 @@ export default function Projects() {
     {
       src: "/projects/mano.jpg",
       alt: "Clara de asís",
-      link: "https://cimadigital.com.ar/mm/",
+      link: "https://claradeasis.org.ar/",
       title: "Mano con Mano",
       description:
         "Through spiritual connection and solidarity, mano con mano impact communities through workshops, collaborations, and sustainable projects, fostering personal growth and societal well-being.",
