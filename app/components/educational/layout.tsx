@@ -46,6 +46,14 @@ const ProjectCard: React.FC<Educational> = ({
 export default function Educational() {
   const projects: Educational[] = [
     {
+      src: "/projects/rickandmorty.jpg",
+      alt: "Rick-and-Morty",
+      link: "https://rick-and-morty-client-cyan.vercel.app/",
+      title: "Rick and Morty",
+      description:
+        "A Rick and Morty API that allows you to search for characters and information about them.",
+    },
+    {
       src: "/projects/saldo.jpg",
       alt: "Saldo",
       link: "https://zg-currency-caculator.vercel.app/",

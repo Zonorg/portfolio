@@ -29,7 +29,7 @@ const ProjectCard: React.FC<Project> = ({
       <div className="absolute inset-0 opacity-0 px-2 gap-3 hover:opacity-100 bg-black bg-opacity-50 flex flex-col justify-center items-center transition-opacity duration-300 rounded-xl">
         <Link href={link} target="_blank">
           <IoOpenOutline
-            className="hover:text-zinc-900 duration-200"
+            className="hover:text-pink-600 duration-200"
             size={35}
           />
         </Link>
@@ -46,20 +46,20 @@ const ProjectCard: React.FC<Project> = ({
 export default function Projects() {
   const projects: Project[] = [
     {
+      src: "/projects/bleemar.jpg",
+      alt: "Bleemar",
+      link: "https://bleemar.vercel.app/",
+      title: "BleeMar",
+      description:
+        "Stock control app made with Next.js, Prisma, and MongoDB. A platform that provides an easy-to-use interface for managing inventory, generate shipping labels from Woocommerce webhooks and more. This app was made for the company Bleemar.",
+    },
+    {
       src: "/projects/mendoza-tours.jpg",
       alt: "Mendoza Tours",
       link: "https://mendozatours.com.ar",
       title: "Mendoza Tours",
       description:
         "Experience the best of Mendoza with Lauke Tours. From thrilling adventures to leisurely wine tours, we tailor unforgettable experiences just for you. Plan your trip today!",
-    },
-    {
-      src: "/projects/quamtum-audio.jpg",
-      alt: "Quamtum Audio",
-      link: "https://quamtumaudio.com/",
-      title: "Quamtum Audio",
-      description:
-        "Elevate your music experience with Quamtum Personal Audio. High-quality like the Style Pro QA10 Earbuds. Experience the perfect blend of design, quality, and functionality.",
     },
     {
       src: "/projects/marianabo.jpg",

@@ -93,6 +93,7 @@ export default function About() {
             >
               HubSpot
             </Link>
+            .
           </p>
           <h2 className="font-medium text-3xl mt-8">
             {" "}

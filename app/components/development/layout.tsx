@@ -69,6 +69,14 @@ export default function Development() {
       description:
         "Lauketours is designed for the use of tourist guides, where they can manage and plan their own tourist routes.",
     },
+    {
+      src: "/projects/quamtum-audio.jpg",
+      alt: "Quamtum Audio",
+      link: "https://quamtumaudio.com/",
+      title: "Quamtum Audio",
+      description:
+        "Elevate your music experience with Quamtum Personal Audio. High-quality like the Style Pro QA10 Earbuds. Experience the perfect blend of design, quality, and functionality.",
+    },
   ];
 
   return (
