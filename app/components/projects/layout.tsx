@@ -54,6 +54,30 @@ export default function Projects() {
         "Stock control app made with Next.js, Prisma, and MongoDB. A platform that provides an easy-to-use interface for managing inventory, generate shipping labels from Woocommerce webhooks and more. This app was made for the company Bleemar.",
     },
     {
+      src: "/projects/withsecure.jpg",
+      alt: "WithSecure",
+      link: "https://www.expertic.com.mx/withsecure",
+      title: "WithSecure™",
+      description:
+        "WithSecure™ Elements: Simplifying cybersecurity, strengthening defenses. Gain real-time visibility and proactive protection across endpoints and cloud applications.",
+    },
+    {
+      src: "/projects/lauke.jpg",
+      alt: "Lauke",
+      link: "https://lauketours.com/",
+      title: "Lauke Tours",
+      description:
+        "Lauketours is designed for the use of tourist guides, where they can manage and plan their own tourist routes.",
+    },
+    {
+      src: "/projects/expertic.jpg",
+      alt: "Expertic",
+      link: "https://www.expertic.com.mx/",
+      title: "Expertic",
+      description:
+        "Expertic offers comprehensive cybersecurity solutions to protect business assets and confidential information. We excel with a holistic approach, skilled technical team, and channel programs for growth and market differentiation.",
+    },
+    {
       src: "/projects/mendoza-tours.jpg",
       alt: "Mendoza Tours",
       link: "https://mendozatours.com.ar",

@@ -46,12 +46,12 @@ const ProjectCard: React.FC<Development> = ({
 export default function Development() {
   const projects: Development[] = [
     {
-      src: "/projects/withsecure.jpg",
-      alt: "WithSecure",
-      link: "https://www.expertic.ai/withsecure?hs_preview=KNqMqYfH-161188345931",
-      title: "WithSecure™",
+      src: "/projects/kwsolar.jpg",
+      alt: "KwSolar",
+      link: "https://cimadigital.com.ar/kwsolar/",
+      title: "KwSolar",
       description:
-        "WithSecure™ Elements: Simplifying cybersecurity, strengthening defenses. Gain real-time visibility and proactive protection across endpoints and cloud applications.",
+        "KwSolar is a leading provider of solar energy solutions. They offer a wide range of services including solar panels, solar roof tiles, solar water heating, and more.",
     },
     {
       src: "/projects/delete.jpg",
@@ -62,12 +62,12 @@ export default function Development() {
         "Delete Technology Group: Experts in secure data erasure. Trusted by governments and organizations worldwide.",
     },
     {
-      src: "/projects/lauke.jpg",
-      alt: "Lauke",
-      link: "https://lauketours.com/",
-      title: "Lauke Tours",
+      src: "/projects/mumblebe.jpg",
+      alt: "Mumblebe",
+      link: "https://mumblebe.com/",
+      title: "Mumblebe",
       description:
-        "Lauketours is designed for the use of tourist guides, where they can manage and plan their own tourist routes.",
+        "Future social network of audios. Connect, create, share, and listen what you love with Mumblebe.",
     },
     {
       src: "/projects/quamtum-audio.jpg",
