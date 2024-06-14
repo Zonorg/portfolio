@@ -4,15 +4,15 @@ import Link from "next/link";
 export default function About() {
   return (
     <div className="w-full py-20 flex flex-col justify-start items-center max-md:py-0">
-      <div className=" about_content w-2/3 flex flex-col items-start gap-5 max-md:w-full max-md:px-5">
-        <h1 className="animate-translateUp ml-auto text-8xl font-semibold max-md:text-5xl max-md:ml-0">
+      <div className="about_content" id="about">
+        <h1 className="animate-translateUp text-right text-8xl font-semibold max-md:text-5xl max-md:ml-0">
           About Me
         </h1>
         <div className="animate-translateUp w-full mt-8 flex items-center gap-5 max-md:flex-col max-md:items-start">
           <p className="text-2xl">
-            I&apos;m a passionate full stack developer based in Argentina. With
-            a focus on websites, I bring a blend of creativity and technical
-            expertise to every project.
+            I&apos;m dedicated to pushing the boundaries of web development,
+            leveraging my creativity and expertise to bring ideas to life
+            effectively.
           </p>
           <video
             src="/about-video.mp4"

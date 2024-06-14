@@ -1,3 +1,4 @@
+import About from "./about/layout";
 import Projects from "./components/projects/layout";
 import Development from "./components/development/layout";
 import Educational from "./components/educational/layout";
@@ -41,6 +42,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <About />
         <div id="projects" className="mt-16 w-full">
           <h2 className="font-medium text-3xl">Checkout my work</h2>
           <Projects />

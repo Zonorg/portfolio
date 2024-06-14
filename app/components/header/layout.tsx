@@ -55,9 +55,9 @@ export default function Header() {
         </Link>
         <div className="hidden lg:flex gap-10">
           {generateLink("/", "Home")}
+          {generateLink("/#about", "About")}{" "}
           {generateLink("/#projects", "Projects")}
           {generateLink("/contact", "Contact")}
-          {generateLink("about", "About")}{" "}
         </div>
         <div className="lg:hidden">
           <button onClick={toggleMenu}>
@@ -74,9 +74,9 @@ export default function Header() {
             </button>
             <div className="flex flex-col gap-5 mt-32 mx-auto">
               {generateLink("/", "Home")}
+              {generateLink("/#about", "About")}
               {generateLink("/#projects", "Projects")}
               {generateLink("/contact", "Contact")}
-              {generateLink("about", "About")}
             </div>
           </motion.div>
         </div>
