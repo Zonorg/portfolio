@@ -10,28 +10,13 @@ interface Development {
   description: string;
 }
 
-const ProjectCard: React.FC<Development> = ({
-  src,
-  alt,
-  link,
-  title,
-  description,
-}) => (
+const ProjectCard: React.FC<Development> = ({ src, alt, link, title, description }) => (
   <div className="project_card flex flex-col justify-center items-center gap-3">
     <div className="hover:scale-105 transition ease-in-out duration-300 relative">
-      <Image
-        src={src}
-        alt={alt}
-        width={600}
-        height={600}
-        className="object-cover h-60 w-96 border-none rounded-xl"
-      />
+      <Image src={src} alt={alt} width={600} height={600} className="object-cover h-60 w-96 border-none rounded-xl" />
       <div className="absolute inset-0 opacity-0 px-2 gap-3 hover:opacity-100 bg-black bg-opacity-50 flex flex-col justify-center items-center transition-opacity duration-300 rounded-xl">
         <Link href={link} target="_blank">
-          <IoOpenOutline
-            className="hover:text-pink-600 duration-200"
-            size={35}
-          />
+          <IoOpenOutline className="hover:text-pink-600 duration-200" size={35} />
         </Link>
         <p>{description}</p>
         <p className="font-medium text-center">{title}</p>
@@ -45,6 +30,13 @@ const ProjectCard: React.FC<Development> = ({
 
 export default function Development() {
   const projects: Development[] = [
+    {
+      src: "/projects/mumblebe.jpg",
+      alt: "Mumblebe",
+      link: "https://mumblebe.com/",
+      title: "Mumblebe",
+      description: "Future social network of audios. Connect, create, share, and listen what you love with Mumblebe.",
+    },
     {
       src: "/projects/kwsolar.jpg",
       alt: "KwSolar",
@@ -60,14 +52,6 @@ export default function Development() {
       title: "Delete Technology",
       description:
         "Delete Technology Group: Experts in secure data erasure. Trusted by governments and organizations worldwide.",
-    },
-    {
-      src: "/projects/mumblebe.jpg",
-      alt: "Mumblebe",
-      link: "https://mumblebe.com/",
-      title: "Mumblebe",
-      description:
-        "Future social network of audios. Connect, create, share, and listen what you love with Mumblebe.",
     },
     {
       src: "/projects/quamtum-audio.jpg",

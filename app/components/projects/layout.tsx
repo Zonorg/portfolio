@@ -10,28 +10,13 @@ interface Project {
   description: string;
 }
 
-const ProjectCard: React.FC<Project> = ({
-  src,
-  alt,
-  link,
-  title,
-  description,
-}) => (
+const ProjectCard: React.FC<Project> = ({ src, alt, link, title, description }) => (
   <div className="project_card flex flex-col justify-center items-center gap-3 shadow-2xl">
     <div className="hover:scale-105 transition ease-in-out duration-300 relative shadow-2xl">
-      <Image
-        src={src}
-        alt={alt}
-        width={600}
-        height={600}
-        className="object-cover h-60 w-96 border-none rounded-xl"
-      />
+      <Image src={src} alt={alt} width={600} height={600} className="object-cover h-60 w-96 border-none rounded-xl" />
       <div className="absolute inset-0 opacity-0 px-2 gap-3 hover:opacity-100 bg-black bg-opacity-50 flex flex-col justify-center items-center transition-opacity duration-300 rounded-xl">
         <Link href={link} target="_blank">
-          <IoOpenOutline
-            className="hover:text-pink-600 duration-200"
-            size={35}
-          />
+          <IoOpenOutline className="hover:text-pink-600 duration-200" size={35} />
         </Link>
         <p>{description}</p>
         <p className="font-medium text-center">{title}</p>
@@ -46,20 +31,12 @@ const ProjectCard: React.FC<Project> = ({
 export default function Projects() {
   const projects: Project[] = [
     {
-      src: "/projects/bleemar.jpg",
-      alt: "Bleemar",
-      link: "https://bleemar.vercel.app/",
-      title: "BleeMar",
+      src: "/projects/mendoza-tours.jpg",
+      alt: "Mendoza Tours",
+      link: "https://mendozatours.com.ar",
+      title: "Mendoza Tours",
       description:
-        "Stock control app made with Next.js, Prisma, and MongoDB. A platform that provides an easy-to-use interface for managing inventory, generate shipping labels from Woocommerce webhooks and more. This app was made for the company Bleemar.",
-    },
-    {
-      src: "/projects/withsecure.jpg",
-      alt: "WithSecure",
-      link: "https://www.expertic.com.mx/withsecure",
-      title: "WithSecure™",
-      description:
-        "WithSecure™ Elements: Simplifying cybersecurity, strengthening defenses. Gain real-time visibility and proactive protection across endpoints and cloud applications.",
+        "Experience the best of Mendoza with Lauke Tours. From thrilling adventures to leisurely wine tours, we tailor unforgettable experiences just for you. Plan your trip today!",
     },
     {
       src: "/projects/lauke.jpg",
@@ -70,6 +47,14 @@ export default function Projects() {
         "Lauketours is designed for the use of tourist guides, where they can manage and plan their own tourist routes.",
     },
     {
+      src: "/projects/bleemar.jpg",
+      alt: "Bleemar",
+      link: "https://bleemar.vercel.app/",
+      title: "BleeMar",
+      description:
+        "Stock control app made with Next.js, Prisma, and MongoDB. A platform that provides an easy-to-use interface for managing inventory, generate shipping labels from Woocommerce webhooks and more. This app was made for the company Bleemar.",
+    },
+    {
       src: "/projects/expertic.jpg",
       alt: "Expertic",
       link: "https://www.expertic.com.mx/",
@@ -78,12 +63,19 @@ export default function Projects() {
         "Expertic offers comprehensive cybersecurity solutions to protect business assets and confidential information. We excel with a holistic approach, skilled technical team, and channel programs for growth and market differentiation.",
     },
     {
-      src: "/projects/mendoza-tours.jpg",
-      alt: "Mendoza Tours",
-      link: "https://mendozatours.com.ar",
-      title: "Mendoza Tours",
+      src: "/projects/withsecure.jpg",
+      alt: "WithSecure",
+      link: "https://www.expertic.com.mx/withsecure",
+      title: "WithSecure™",
       description:
-        "Experience the best of Mendoza with Lauke Tours. From thrilling adventures to leisurely wine tours, we tailor unforgettable experiences just for you. Plan your trip today!",
+        "WithSecure™ Elements: Simplifying cybersecurity, strengthening defenses. Gain real-time visibility and proactive protection across endpoints and cloud applications.",
+    },
+    {
+      src: "/projects/sys.jpg",
+      alt: "Sys Inmobiliaria",
+      link: "https://inmobiliariasys.com.ar/",
+      title: "Inmobiliaria Sys",
+      description: "Fully responsive platform for a real estate agency, designed to showcase properties for sale and rent.",
     },
     {
       src: "/projects/marianabo.jpg",
