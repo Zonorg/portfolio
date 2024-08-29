@@ -28,12 +28,28 @@ const ProjectCard: React.FC<Project> = ({ src, alt, link, title, description }) 
 export default function Projects() {
   const projects: Project[] = [
     {
+      src: "/projects/cima.jpg",
+      alt: "Cima Digital",
+      link: "https://cimadigital.com.ar",
+      title: "Cima Digital",
+      description:
+        "Cima Digital is a digital agency that offers digital solutions, company for which I currently work. Made with WordPress, Elementor, and Custom Theme.",
+    },
+    {
       src: "/projects/mendoza-tours.jpg",
       alt: "Mendoza Tours",
       link: "https://mendozatours.com.ar",
       title: "Mendoza Tours",
       description:
-        "Experience the best of Mendoza with Lauke Tours. From thrilling adventures to leisurely wine tours, we tailor unforgettable experiences just for you. Plan your trip today!",
+        "Website made on WordPress for Mendoza tours. With Elementor, JetEngine, WooCommerce, and Custom Plugins.",
+    },
+    {
+      src: "/projects/bariloche.jpg",
+      alt: "Bariloche Tours",
+      link: "https://barilochetours.com.ar",
+      title: "Bariloche Tours",
+      description:
+        "Website made on WordPress for Bariloche tours. With Elementor, JetEngine, WooCommerce, and Custom Plugins.",
     },
     {
       src: "/projects/lauke.jpg",
@@ -41,7 +57,7 @@ export default function Projects() {
       link: "https://lauketours.com/",
       title: "Lauke Tours",
       description:
-        "Lauketours is designed for the use of tourist guides, where they can manage and plan their own tourist routes.",
+        "Lauketours is designed for the use of tourist guides, where they can manage and plan their own tourist routes. Made with Wordpress, Elementor. Guides can register and manage their routes.",
     },
     {
       src: "/projects/bleemar.jpg",
@@ -57,15 +73,14 @@ export default function Projects() {
       link: "https://www.expertic.com.mx/",
       title: "Expertic",
       description:
-        "Expertic offers comprehensive cybersecurity solutions to protect business assets and confidential information. We excel with a holistic approach, skilled technical team, and channel programs for growth and market differentiation.",
+        "Expertic is a company that offers services and products of cibersecurity to businesses. Made with Hubpot.",
     },
     {
       src: "/projects/withsecure.jpg",
       alt: "WithSecure",
       link: "https://www.expertic.com.mx/withsecure",
       title: "WithSecure™",
-      description:
-        "WithSecure™ Elements: Simplifying cybersecurity, strengthening defenses. Gain real-time visibility and proactive protection across endpoints and cloud applications.",
+      description: "WithSecure™ Elements: Simplifying cybersecurity for bussiness. Made with Hubpot.",
     },
     {
       src: "/projects/sys.jpg",
@@ -80,15 +95,14 @@ export default function Projects() {
       alt: "Mariana Bo",
       link: "https://opus.djmarianabo.com/",
       title: "Mariana Bo",
-      description: "Dj Mariana Bo's Official Store",
+      description: "Dj Mariana Bo's Official Store. Made with Shopify.",
     },
     {
       src: "/projects/bitdefender.jpg",
       alt: "Bitdefender",
       link: "https://www.bitdefender.lat/",
       title: "Bitdefender",
-      description:
-        "Global cybersecurity leader since 2001, protecting 500M+ systems in 150+ countries. Explore the offerings for protection, enhance business security, discover technology, or get support.",
+      description: "Bitdefender is a Latvian company that provides security solutions. Made with Shopify.",
     },
     {
       src: "/projects/mano.jpg",
@@ -96,7 +110,7 @@ export default function Projects() {
       link: "https://claradeasis.org.ar/",
       title: "Mano con Mano",
       description:
-        "Through spiritual connection and solidarity, mano con mano impact communities through workshops, collaborations, and sustainable projects, fostering personal growth and societal well-being.",
+        "Mano con mano is a non-profit organization that provides free services to help people. Made with Wordpress and Elementor.",
     },
     {
       src: "/projects/control.jpg",
@@ -104,7 +118,7 @@ export default function Projects() {
       link: "https://controlmatch.com.mx/",
       title: "Control Match",
       description:
-        "The platform streamlines freight matching, efficiently connecting clients and providers. Using advanced algorithms, it links loads with ideal units in real-time, providing digital delivery evidence and seamless API integration.",
+        "The platform streamlines freight matching, efficiently connecting clients and providers. Made with Wordpress and Elementor.",
     },
   ];
 
