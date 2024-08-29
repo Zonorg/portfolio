@@ -11,21 +11,18 @@ interface Project {
 }
 
 const ProjectCard: React.FC<Project> = ({ src, alt, link, title, description }) => (
-  <div className="project_card flex flex-col justify-center items-center gap-3 shadow-2xl">
-    <div className="hover:scale-105 transition ease-in-out duration-300 relative shadow-2xl">
-      <Image src={src} alt={alt} width={600} height={600} className="object-cover h-60 w-96 border-none rounded-xl" />
-      <div className="absolute inset-0 opacity-0 px-2 gap-3 hover:opacity-100 bg-black bg-opacity-50 flex flex-col justify-center items-center transition-opacity duration-300 rounded-xl">
-        <Link href={link} target="_blank">
+  <Link href={link} target="_blank">
+    <div className="project_card flex flex-col justify-center items-center gap-3 shadow-2xl">
+      <div className="hover:scale-105 transition ease-in-out duration-300 relative shadow-2xl">
+        <Image src={src} alt={alt} width={600} height={600} className="object-cover h-60 w-96 border-none rounded-xl" />
+        <div className="absolute inset-0 opacity-0 px-2 gap-3 hover:opacity-100 bg-black bg-opacity-50 flex flex-col justify-center items-center transition-opacity duration-300 rounded-xl">
           <IoOpenOutline className="hover:text-pink-600 duration-200" size={35} />
-        </Link>
-        <p>{description}</p>
-        <p className="font-medium text-center">{title}</p>
-        {/* <Link href={link} className="hover:font-bold">
-          Read more
-        </Link> */}
+          <p>{description}</p>
+          <p className="font-medium text-center">{title}</p>
+        </div>
       </div>
     </div>
-  </div>
+  </Link>
 );
 
 export default function Projects() {
@@ -75,7 +72,8 @@ export default function Projects() {
       alt: "Sys Inmobiliaria",
       link: "https://inmobiliariasys.com.ar/",
       title: "Inmobiliaria Sys",
-      description: "Fully responsive platform for a real estate agency, designed to showcase properties for sale and rent.",
+      description:
+        "Fully responsive platform for a real estate agency, designed to showcase properties for sale and rent.",
     },
     {
       src: "/projects/marianabo.jpg",

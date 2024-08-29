@@ -10,37 +10,19 @@ interface Educational {
   description: string;
 }
 
-const ProjectCard: React.FC<Educational> = ({
-  src,
-  alt,
-  link,
-  title,
-  description,
-}) => (
-  <div className="project_card flex flex-col justify-center items-center gap-3">
-    <div className="hover:scale-105 transition ease-in-out duration-300 relative">
-      <Image
-        src={src}
-        alt={alt}
-        width={600}
-        height={600}
-        className="object-cover h-60 w-96 border-none rounded-xl"
-      />
-      <div className="absolute inset-0 opacity-0 px-2 gap-3 hover:opacity-100 bg-black bg-opacity-50 flex flex-col justify-center items-center transition-opacity duration-300 rounded-xl">
-        <Link href={link} target="_blank">
-          <IoOpenOutline
-            className="hover:text-pink-600 duration-200"
-            size={35}
-          />
-        </Link>
-        <p>{description}</p>
-        <p className="font-medium text-center">{title}</p>
-        {/* <Link href={link} className="hover:font-bold">
-          Read more
-        </Link> */}
+const ProjectCard: React.FC<Educational> = ({ src, alt, link, title, description }) => (
+  <Link href={link} target="_blank">
+    <div className="project_card flex flex-col justify-center items-center gap-3">
+      <div className="hover:scale-105 transition ease-in-out duration-300 relative">
+        <Image src={src} alt={alt} width={600} height={600} className="object-cover h-60 w-96 border-none rounded-xl" />
+        <div className="absolute inset-0 opacity-0 px-2 gap-3 hover:opacity-100 bg-black bg-opacity-50 flex flex-col justify-center items-center transition-opacity duration-300 rounded-xl">
+          <IoOpenOutline className="hover:text-pink-600 duration-200" size={35} />
+          <p>{description}</p>
+          <p className="font-medium text-center">{title}</p>
+        </div>
       </div>
     </div>
-  </div>
+  </Link>
 );
 
 export default function Educational() {
@@ -50,8 +32,7 @@ export default function Educational() {
       alt: "Rick-and-Morty",
       link: "https://rick-and-morty-client-cyan.vercel.app/",
       title: "Rick and Morty",
-      description:
-        "A Rick and Morty API that allows you to search for characters and information about them.",
+      description: "A Rick and Morty API that allows you to search for characters and information about them.",
     },
     {
       src: "/projects/saldo.jpg",
