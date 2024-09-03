@@ -1,30 +1,42 @@
-import type { Metadata } from "next";
-import { Enriqueta } from "next/font/google";
-import Header from "./components/header/layout";
-import Footer from "./components/footer/layout";
-import "./globals.css";
+import "@/styles/globals.css";
+import { Metadata, Viewport } from "next";
+import clsx from "clsx";
 
-const lato = Enriqueta({
-  weight: ["400", "500", "700"],
-  subsets: ["latin"],
-});
+import { Providers } from "./providers";
+
+import { siteConfig } from "@/config/site";
+import { fontSans } from "@/config/fonts";
+import Header from "@/components/header";
 
 export const metadata: Metadata = {
-  title: "Renzo Viscio",
-  description: "My portfolio",
+  title: {
+    default: siteConfig.name,
+    template: `%s - ${siteConfig.name}`,
+  },
+  description: siteConfig.description,
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "white" },
+    { media: "(prefers-color-scheme: dark)", color: "black" },
+  ],
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className={lato.className}>
-        <Header />
-        {children}
-        <Footer />
+    <html suppressHydrationWarning lang="es">
+      <head />
+      <body className={clsx("bg-white dark:bg-[#0e141b] font-sans antialiased pb-10 min-h-screen", fontSans.variable)}>
+        <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
+          <div className="relative flex flex-col">
+            <Header />
+            <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">{children}</main>
+          </div>
+        </Providers>
       </body>
     </html>
   );

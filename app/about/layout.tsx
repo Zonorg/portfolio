@@ -3,9 +3,11 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <div className="w-full py-20 flex flex-col justify-start items-center max-md:py-0">
+    <div className="py-20">
       <div className="about_content" id="about">
-        <h1 className="animate-translateUp text-right text-8xl font-semibold max-md:text-5xl max-md:ml-0">About Me</h1>
+        <h1 className="animate-translateUp text-right text-8xl font-semibold max-md:text-5xl max-md:text-left">
+          About Me
+        </h1>
         <div className="animate-translateUp w-full mt-8 flex items-center gap-5 max-md:flex-col max-md:items-start">
           <p className="text-2xl">
             I&apos;m dedicated to pushing the boundaries of web development, leveraging my creativity and expertise to
