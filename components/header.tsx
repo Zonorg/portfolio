@@ -5,10 +5,10 @@ import { RiVerifiedBadgeFill } from "react-icons/ri";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 
-import { Navbar as NextUINavbar, NavbarContent, NavbarBrand } from "@nextui-org/navbar";
+import { Navbar as NextUINavbar, NavbarContent } from "@nextui-org/navbar";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -22,11 +22,6 @@ export default function Header() {
 
   // Cualquier ruta que no sea válida es una 404
   const is404Page = !validPaths.includes(pathname);
-
-  // Si estás en la página 404, no renderices el Header
-  if (is404Page) {
-    return null;
-  }
 
   const isActive = (href: string) => pathname === href;
 
@@ -52,6 +47,11 @@ export default function Header() {
       {text}
     </Link>
   );
+
+  // Si estás en la página 404, no renderices el Header
+  if (is404Page) {
+    return null;
+  }
 
   return (
     <NextUINavbar maxWidth="xl" position="sticky" className="dark:bg-[#0e141bb9]">
