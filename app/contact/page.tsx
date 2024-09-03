@@ -75,7 +75,7 @@ export default function Contact(): JSX.Element {
               value={formData.from_name}
               onChange={handleChange}
               placeholder="Name"
-              className="w-full p-2 border border-gray-300 text-stone-900 rounded-md focus:outline-none focus:border-gray-500 dark:bg-white"
+              className="w-full p-2 border border-gray-300 text-stone-900 rounded-md focus:outline-none focus:border-gray-500 resize-none bg-zinc-50 dark:bg-white"
               required
             />
           </div>
@@ -87,7 +87,7 @@ export default function Contact(): JSX.Element {
               value={formData.from_email}
               onChange={handleChange}
               placeholder="Email"
-              className="w-full p-2 border border-gray-300 text-stone-900 rounded-md focus:outline-none focus:border-gray-500 dark:bg-white"
+              className="w-full p-2 border border-gray-300 text-stone-900 rounded-md focus:outline-none focus:border-gray-500 resize-none bg-zinc-50 dark:bg-white"
               required
             />
           </div>
@@ -99,13 +99,13 @@ export default function Contact(): JSX.Element {
               onChange={handleChange}
               placeholder="Leave your message here"
               rows={4}
-              className="w-full p-2 border border-gray-300 text-stone-900 rounded-md focus:outline-none focus:border-gray-500 resize-none dark:bg-white"
+              className="w-full p-2 border border-gray-300 text-stone-900 rounded-md focus:outline-none focus:border-gray-500 resize-none bg-zinc-50 dark:bg-white"
               required
             ></textarea>
           </div>
           <button
             type="submit"
-            className="px-4 py-2 bg-pink-700 font-medium rounded-md hover:bg-pink-600 focus:outline-none focus:bg-gray-600"
+            className="px-4 py-2 bg-pink-700 font-medium rounded-md hover:bg-pink-600 focus:outline-none focus:bg-gray-600 text-white"
             disabled={isSubmitting}
           >
             {isSubmitting ? <AiOutlineLoading3Quarters className="animate-spin" /> : <span>Submit</span>}

@@ -8,7 +8,7 @@ export default function Error() {
       <div className="w-2/3 flex flex-col items-center gap-5 max-md:w-11/12">
         <h1 className="animate-translateUp text-8xl font-semibold max-md:text-5xl">Ups!</h1>
         <p className="text-xl mt-10">404 Error. It seems that the page you are looking for does not exist.</p>
-        <Link href="/" className="bg-pink-700 font-medium rounded px-4 py-2 hover:bg-pink-600">
+        <Link href="/" className="bg-pink-700 font-medium rounded px-4 py-2 hover:bg-pink-600 text-white">
           Go back home
         </Link>
       </div>
