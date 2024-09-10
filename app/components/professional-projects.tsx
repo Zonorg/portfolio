@@ -83,6 +83,13 @@ export default function Projects() {
       description: "WithSecure™ Elements: Simplifying cybersecurity for bussiness. Made with Hubpot.",
     },
     {
+      src: "/projects/san-pablo.jpg",
+      alt: "Ferretería San Pablo",
+      link: "https://ferresanpablo.com/",
+      title: "Ferretería San Pablo",
+      description: "Ferretería San Pablo. Made with Shopify.",
+    },
+    {
       src: "/projects/sys.jpg",
       alt: "Sys Inmobiliaria",
       link: "https://inmobiliariasys.com.ar/",
