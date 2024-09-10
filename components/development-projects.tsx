@@ -4,13 +4,6 @@ import { IProject } from "@/types";
 export default function Development() {
   const projects: IProject[] = [
     {
-      src: "/projects/mumblebe.jpg",
-      alt: "Mumblebe",
-      link: "https://mumblebe.com/",
-      title: "Mumblebe",
-      description: "Future social network of audios. Connect, create, share, and listen what you love with Mumblebe.",
-    },
-    {
       src: "/projects/kwsolar.jpg",
       alt: "KwSolar",
       link: "https://cimadigital.com.ar/kwsolar/",

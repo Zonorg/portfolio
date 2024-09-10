@@ -1,8 +1,32 @@
-import { ProjectCard } from "./project-card";
-import { IProject } from "@/types";
+import Image from "next/image";
+import Link from "next/link";
+import { IoOpenOutline } from "react-icons/io5";
+
+interface Project {
+  src: string;
+  alt: string;
+  link: string;
+  title: string;
+  description: string;
+}
+
+const ProjectCard: React.FC<Project> = ({ src, alt, link, title, description }) => (
+  <Link href={link} target="_blank">
+    <div className="project_card flex flex-col justify-center items-center gap-3 shadow-2xl">
+      <div className="hover:scale-105 transition ease-in-out duration-300 relative shadow-2xl">
+        <Image src={src} alt={alt} width={600} height={600} className="object-cover h-60 w-96 border-none rounded-xl" />
+        <div className="absolute inset-0 opacity-0 px-2 gap-3 hover:opacity-100 bg-black bg-opacity-50 flex flex-col justify-center items-center transition-opacity duration-300 rounded-xl">
+          <IoOpenOutline className="hover:text-pink-600 duration-200" size={35} />
+          <p>{description}</p>
+          <p className="font-medium text-center">{title}</p>
+        </div>
+      </div>
+    </div>
+  </Link>
+);
 
 export default function Projects() {
-  const projects: IProject[] = [
+  const projects: Project[] = [
     {
       src: "/projects/cima.jpg",
       alt: "Cima Digital",
@@ -10,6 +34,13 @@ export default function Projects() {
       title: "Cima Digital",
       description:
         "Cima Digital is a digital agency that offers digital solutions, company for which I currently work. Made with WordPress, Elementor, and Custom Theme.",
+    },
+    {
+      src: "/projects/mumblebe.jpg",
+      alt: "Mumblebe",
+      link: "https://mumblebe.com/",
+      title: "Mumblebe",
+      description: "Future social network of audios. Connect, create, share, and listen what you love with Mumblebe.",
     },
     {
       src: "/projects/mendoza-tours.jpg",
@@ -59,6 +90,13 @@ export default function Projects() {
       description: "WithSecure™ Elements: Simplifying cybersecurity for bussiness. Made with Hubpot.",
     },
     {
+      src: "/projects/san-pablo.jpg",
+      alt: "Ferretería San Pablo",
+      link: "https://ferresanpablo.com/",
+      title: "Ferretería San Pablo",
+      description: "Ferretería San Pablo. Made with Shopify.",
+    },
+    {
       src: "/projects/sys.jpg",
       alt: "Sys Inmobiliaria",
       link: "https://inmobiliariasys.com.ar/",
@@ -99,7 +137,7 @@ export default function Projects() {
   ];
 
   return (
-    <div className="projects_section py-10 grid grid-cols-3 gap-y-10 max-2xl:grid-cols-2 max-lg:grid-cols-1">
+    <div className="projects_section py-10 grid grid-cols-3 gap-y-10 justify-items-start max-2xl:grid-cols-2 max-xl:grid-cols-1">
       {projects.map((project, index) => (
         <ProjectCard key={index} {...project} />
       ))}
