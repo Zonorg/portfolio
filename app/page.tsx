@@ -1,7 +1,7 @@
 import About from "./about/layout";
-import Projects from "../components/professional-projects";
-import Development from "../components/development-projects";
-import Educational from "../components/educational-projects";
+import Projects from "./projects/professional-projects";
+import Development from "./projects/development-projects";
+import Educational from "./projects/educational-projects";
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";

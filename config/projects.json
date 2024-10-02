@@ -1,0 +1,148 @@
+{
+    "profesionalProjects": [
+        {
+            "src": "/projects/cima.jpg",
+            "alt": "Cima Digital",
+            "link": "https://cimadigital.com.ar",
+            "title": "Cima Digital",
+            "description": "Cima Digital is a digital agency that offers digital solutions, company for which I currently work. Made with WordPress, Elementor, and Custom Theme."
+        },
+        {
+            "src": "/projects/mumblebe.jpg",
+            "alt": "Mumblebe",
+            "link": "https://mumblebe.com/",
+            "title": "Mumblebe",
+            "description": "Future social network of audios. Connect, create, share, and listen what you love with Mumblebe."
+        },
+        {
+            "src": "/projects/mendoza-tours.jpg",
+            "alt": "Mendoza Tours",
+            "link": "https://mendozatours.com.ar",
+            "title": "Mendoza Tours",
+            "description": "Website made on WordPress for Mendoza tours. With Elementor, JetEngine, WooCommerce, and Custom Plugins."
+        },
+        {
+            "src": "/projects/bariloche.jpg",
+            "alt": "Bariloche Tours",
+            "link": "https://barilochetours.com.ar",
+            "title": "Bariloche Tours",
+            "description": "Website made on WordPress for Bariloche tours. With Elementor, JetEngine, WooCommerce, and Custom Plugins."
+        },
+        {
+            "src": "/projects/lauke.jpg",
+            "alt": "Lauke",
+            "link": "https://lauketours.com/",
+            "title": "Lauke Tours",
+            "description": "Lauketours is designed for the use of tourist guides, where they can manage and plan their own tourist routes. Made with Wordpress, Elementor. Guides can register and manage their routes."
+        },
+        {
+            "src": "/projects/bleemar.jpg",
+            "alt": "Bleemar",
+            "link": "https://bleemar.vercel.app/",
+            "title": "BleeMar",
+            "description": "Stock control app made with Next.js, Prisma, and MongoDB. A platform that provides an easy-to-use interface for managing inventory, generate shipping labels from Woocommerce webhooks and more. This app was made for the company Bleemar."
+        },
+        {
+            "src": "/projects/expertic.jpg",
+            "alt": "Expertic",
+            "link": "https://www.expertic.com.mx/",
+            "title": "Expertic",
+            "description": "Expertic is a company that offers services and products of cibersecurity to businesses. Made with Hubpot."
+        },
+        {
+            "src": "/projects/withsecure.jpg",
+            "alt": "WithSecure",
+            "link": "https://www.expertic.com.mx/withsecure",
+            "title": "WithSecure™",
+            "description": "WithSecure™ Elements: Simplifying cybersecurity for bussiness. Made with Hubpot."
+        },
+        {
+            "src": "/projects/san-pablo.jpg",
+            "alt": "Ferretería San Pablo",
+            "link": "https://ferresanpablo.com/",
+            "title": "Ferretería San Pablo",
+            "description": "Ferretería San Pablo. Made with Shopify."
+        },
+        {
+            "src": "/projects/sys.jpg",
+            "alt": "Sys Inmobiliaria",
+            "link": "https://inmobiliariasys.com.ar/",
+            "title": "Inmobiliaria Sys",
+            "description": "Fully responsive platform for a real estate agency, designed to showcase properties for sale and rent."
+        },
+        {
+            "src": "/projects/marianabo.jpg",
+            "alt": "Mariana Bo",
+            "link": "https://opus.djmarianabo.com/",
+            "title": "Mariana Bo",
+            "description": "Dj Mariana Bo's Official Store. Made with Shopify."
+        },
+        {
+            "src": "/projects/bitdefender.jpg",
+            "alt": "Bitdefender",
+            "link": "https://www.bitdefender.lat/",
+            "title": "Bitdefender",
+            "description": "Bitdefender is a Latvian company that provides security solutions. Made with Shopify."
+        },
+        {
+            "src": "/projects/mano.jpg",
+            "alt": "Clara de asís",
+            "link": "https://claradeasis.org.ar/",
+            "title": "Mano con Mano",
+            "description": "Mano con mano is a non-profit organization that provides free services to help people. Made with Wordpress and Elementor."
+        },
+        {
+            "src": "/projects/control.jpg",
+            "alt": "Control Match",
+            "link": "https://controlmatch.com.mx/",
+            "title": "Control Match",
+            "description": "The platform streamlines freight matching, efficiently connecting clients and providers. Made with Wordpress and Elementor."
+        }
+    ],
+    "developmentProjects": [
+        {
+            "src": "/projects/kwsolar.jpg",
+            "alt": "KwSolar",
+            "link": "https://cimadigital.com.ar/kwsolar/",
+            "title": "KwSolar",
+            "description": "KwSolar is a leading provider of solar energy solutions. They offer a wide range of services including solar panels, solar roof tiles, solar water heating, and more."
+        },
+        {
+            "src": "/projects/delete.jpg",
+            "alt": "Delete Technology",
+            "link": "https://www.deletetechnology.com/-temporary-slug-bb7af0f4-0669-41f6-ae0e-cd3238fda02f?hs_preview=dMnNoQlr-159659264682",
+            "title": "Delete Technology",
+            "description": "Delete Technology Group: Experts in secure data erasure. Trusted by governments and organizations worldwide."
+        },
+        {
+            "src": "/projects/quamtum-audio.jpg",
+            "alt": "Quamtum Audio",
+            "link": "https://quamtumaudio.com/",
+            "title": "Quamtum Audio",
+            "description": "Elevate your music experience with Quamtum Personal Audio. High-quality like the Style Pro QA10 Earbuds. Experience the perfect blend of design, quality, and functionality."
+        }
+    ],
+    "educationalProjects": [
+        {
+            "src": "/projects/rickandmorty.jpg",
+            "alt": "Rick and Morty",
+            "link": "https://rick-and-morty-client-cyan.vercel.app/",
+            "title": "Rick and Morty",
+            "description": "A Rick and Morty API that allows you to search for characters and information about them."
+        },
+        {
+            "src": "/projects/saldo.jpg",
+            "alt": "Saldo",
+            "link": "https://zg-currency-caculator.vercel.app/",
+            "title": "Saldo",
+            "description": "Currency Calculator"
+        },
+        {
+            "src": "/projects/electroshop.jpg",
+            "alt": "Electroshop",
+            "link": "https://www.linkedin.com/feed/update/urn:li:activity:7061449669389787136/",
+            "title": "Electroshop",
+            "description": "Electroshop is a company that offers electronic products. Made with Shopify."
+        }
+    ]
+}
