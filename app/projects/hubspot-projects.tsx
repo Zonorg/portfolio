@@ -2,8 +2,8 @@ import { ProjectCard } from "@/components/project-card";
 import { IProject } from "@/types";
 import projectsData from "@/config/projects.json";
 
-export default function Development() {
-  const projects: IProject[] = projectsData.developmentProjects;
+export default function HubspotProjects() {
+  const projects: IProject[] = projectsData.hubspotProjects;
 
   return (
     <div className="projects_section py-10 grid grid-cols-3 gap-y-10 max-2xl:grid-cols-2 max-lg:grid-cols-1">
