@@ -1,121 +1,34 @@
 "use client";
-import { useState, ChangeEvent, FormEvent, useEffect } from "react";
-import emailjs from "@emailjs/browser";
-import { AiOutlineLoading3Quarters } from "react-icons/ai/index";
+
 import Image from "next/image";
+import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
-interface FormData {
-  from_name: string;
-  from_email: string;
-  message: string;
-}
-
-export default function Contact(): JSX.Element {
-  const [formData, setFormData] = useState<FormData>({
-    from_name: "",
-    from_email: "",
-    message: "",
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [messageSent, setMessageSent] = useState(false);
-
-  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    emailjs
-      .sendForm("portfolio", "portfolio_temp_wofrc8m", e.currentTarget, "orPc7-IqQewECHePE")
-      .then(
-        (result) => {
-          console.log(result.text);
-          setMessageSent(true);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      )
-      .finally(() => {
-        setIsSubmitting(false);
-      });
-
-    setFormData({
-      from_name: "",
-      from_email: "",
-      message: "",
-    });
-  };
-
-  useEffect(() => {
-    let timer: ReturnType<typeof setTimeout>;
-    if (messageSent) {
-      timer = setTimeout(() => {
-        setMessageSent(false);
-      }, 3000);
-    }
-    return () => clearTimeout(timer);
-  }, [messageSent]);
-
+export default function Contact() {
   return (
     <div className="contact_content animate-translateUp">
       <h1 className="text-8xl font-semibold max-md:text-5xl">Contact me</h1>
-      <div className="contact_flex mt-8 flex justify-between items-start w-full gap-5 max-lg:flex-col">
-        <form onSubmit={handleSubmit} className="w-full">
-          <div className="mb-4">
-            <input
-              type="text"
-              id="from_name"
-              name="from_name"
-              value={formData.from_name}
-              onChange={handleChange}
-              placeholder="Name"
-              className="w-full p-2 border border-gray-300 text-stone-900 rounded-md focus:outline-none focus:border-gray-500 resize-none bg-zinc-50 dark:bg-white"
-              required
-            />
-          </div>
-          <div className="mb-4">
-            <input
-              type="email"
-              id="from_email"
-              name="from_email"
-              value={formData.from_email}
-              onChange={handleChange}
-              placeholder="Email"
-              className="w-full p-2 border border-gray-300 text-stone-900 rounded-md focus:outline-none focus:border-gray-500 resize-none bg-zinc-50 dark:bg-white"
-              required
-            />
-          </div>
-          <div className="mb-6">
-            <textarea
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              placeholder="Leave your message here"
-              rows={4}
-              className="w-full p-2 border border-gray-300 text-stone-900 rounded-md focus:outline-none focus:border-gray-500 resize-none bg-zinc-50 dark:bg-white"
-              required
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            className="px-4 py-2 bg-pink-700 font-medium rounded-md hover:bg-pink-600 focus:outline-none focus:bg-gray-600 text-white"
-            disabled={isSubmitting}
+      <p className="text-xl mt-4 max-md:text-lg">Want to work with me? Let's connect!</p>
+      <div className="contact_flex mt-8 flex  items-start w-full max-lg:flex-col">
+        <div className="flex  w-full gap-5">
+          <a
+            href="https://www.linkedin.com/in/renzo-viscio-b69a13217/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-3xl hover:scale-125 transition"
           >
-            {isSubmitting ? <AiOutlineLoading3Quarters className="animate-spin" /> : <span>Submit</span>}
-          </button>
-          {messageSent && (
-            <p className="mt-2 text-pink-600 font-bold text-md">
-              Thank you for contacting me! I will be in touch with you as soon as possible.
-            </p>
-          )}
-        </form>
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://wa.me/+5492604676270"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-3xl hover:scale-125 transition"
+          >
+            <FaWhatsapp />
+          </a>
+        </div>
+      </div>
+      <div className="mt-8">
         <video src="/contact-video.mp4" autoPlay muted loop playsInline className="rounded-xl max-lg:hidden w-1/2" />
         <Image
           src="/contact-cover.png"
