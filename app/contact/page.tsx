@@ -1,7 +1,7 @@
 "use client";
 import { useState, ChangeEvent, FormEvent, useEffect } from "react";
 import emailjs from "@emailjs/browser";
-import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import { AiOutlineLoading3Quarters } from "react-icons/ai/index";
 import Image from "next/image";
 
 interface FormData {
