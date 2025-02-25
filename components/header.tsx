@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { RiVerifiedBadgeFill } from "react-icons/ri";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import { usePathname } from "next/navigation";
@@ -65,13 +64,12 @@ export default function Header() {
             className="border-none rounded-full"
           />
           <span className="font-semibold hover:text-pink-600">Renzo Viscio</span>
-          <RiVerifiedBadgeFill size={25} color="#1da1f2" />
         </Link>
         <Link href="https://github.com/Zonorg" target="_blank">
-          <FaGithub className="hover:text-pink-600 text-xl hover:text-2xl duration-300 transition-all" />
+          <FaGithub className="hover:text-pink-600 text-xl hover:scale-125 duration-300 transition-all" />
         </Link>
         <Link href="https://www.linkedin.com/in/renzo-viscio-b69a13217/" target="_blank">
-          <FaLinkedin className="hover:text-pink-600 text-xl hover:text-2xl duration-300 transition-all" />
+          <FaLinkedin className="hover:text-pink-600 text-xl hover:scale-125 duration-300 transition-all" />
         </Link>
       </NavbarContent>
       <div className="hidden lg:flex gap-10">
