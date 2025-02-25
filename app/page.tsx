@@ -58,6 +58,20 @@ export default function Home() {
         <h2 className="font-medium text-3xl mt-16">Wade with</h2>
         <div className="flex gap-4 flex-wrap">
           <Image
+            src={theme === "light" ? "/logos/php-logo.webp" : "/logos/php-logo-blanco.webp"}
+            alt="PHP logo"
+            width={100}
+            height={100}
+            className="w-auto object-contain"
+          />
+          <Image
+            src={theme === "light" ? "/logos/laravel-logo.webp" : "/logos/laravel-logo-blanco.webp"}
+            alt="Laravel logo"
+            width={150}
+            height={150}
+            className="w-auto object-contain"
+          />
+          <Image
             src={theme === "light" ? "/logos/wordpress-logo.webp" : "/logos/wordpress-logo-blanco.webp"}
             alt="Wordpress logo"
             width={150}

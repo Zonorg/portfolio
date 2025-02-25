@@ -35,14 +35,7 @@
             "alt": "Mendoza Tours",
             "link": "https://mendozatours.com.ar",
             "title": "Mendoza Tours",
-            "description": "Website made on WordPress for Mendoza tours. With Elementor, JetEngine, WooCommerce, and Custom Plugins."
-        },
-        {
-            "src": "/projects/rest.jpg",
-            "alt": "Rest Right Mattress",
-            "link": "https://restrightmattress.com",
-            "title": "Rest Right Mattress",
-            "description": ""
+            "description": "Website made on WordPress for Mendoza tours. With PHP, Elementor, JetEngine, WooCommerce, and Custom Plugins."
         },
         {
             "src": "/projects/alma-orders.jpg",
@@ -66,11 +59,18 @@
             "description": "Lauketours is designed for the use of tourist guides, where they can manage and plan their own tourist routes. Made with Wordpress, Elementor. Guides can register and manage their routes."
         },
         {
+            "src": "/projects/almaafiliados.jpg",
+            "alt": "Alma Afiliados",
+            "link": "https://almaafiliados.com.ar/",
+            "title": "Alma Afiliados",
+            "description": ""
+        },
+        {
             "src": "/projects/cima.jpg",
             "alt": "Cima Digital",
             "link": "https://cimadigital.com.ar",
             "title": "Cima Digital",
-            "description": "Cima Digital is a digital agency that offers digital solutions, company for which I currently work. Made with WordPress, Elementor, and Custom Theme."
+            "description": "Cima Digital is a digital agency that offers digital solutions, company for which I currently work. Made with PHP, Laravel"
         },
         {
             "src": "/projects/sys.jpg",
@@ -84,7 +84,7 @@
             "alt": "Clara de asís",
             "link": "https://claradeasis.org.ar/",
             "title": "Mano con Mano",
-            "description": "Mano con mano is a non-profit organization that provides free services to help people. Made with Wordpress and Elementor."
+            "description": "Mano con mano is a non-profit organization that provides free services to help people. Made with Wordpress, and Elementor."
         },
         {
             "src": "/projects/control.jpg",
@@ -131,13 +131,6 @@
             "link": "https://www.bitdefender.lat/",
             "title": "Bitdefender",
             "description": "Bitdefender is a Latvian company that provides security solutions. Made with Shopify."
-        },
-        {
-            "src": "/projects/san-pablo.jpg",
-            "alt": "Ferretería San Pablo",
-            "link": "https://ferresanpablo.com/",
-            "title": "Ferretería San Pablo",
-            "description": "Ferretería San Pablo. Made with Shopify."
         },
         {
             "src": "/projects/marianabo.jpg",
