@@ -2,10 +2,17 @@
     "reactProjects": [
         {
             "src": "/projects/hoteles.jpg",
-            "alt": "Mumblebe",
-            "link": "https://hoteles.mendozatours.com.ar/",
+            "alt": "Hoteles Lauke Tours",
+            "link": "https://hoteles.lauketours.com/",
             "title": "Hoteles Mendoza Tours",
             "description": "Hoteles allows you to find and book accommodations for your next trip to Mendoza."
+        },
+        {
+            "src": "/projects/belga.png",
+            "alt": "Inmobiliaria Belga",
+            "link": "https://belga.com.ar/",
+            "title": "Inmobiliaria Belga",
+            "description": "Inmobiliaria Belga is a real estate agency that helps you find your dream home in Argentina."
         },
         {
             "src": "/projects/mumblebe.jpg",

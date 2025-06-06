@@ -30,11 +30,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html suppressHydrationWarning lang="es">
       <head />
-      <body className={clsx("bg-white dark:bg-[#0e141b] font-sans antialiased pb-10 min-h-screen", fontSans.variable)}>
+      <body className={clsx("bg-white dark:bg-[#0e141b] font-sans antialiased min-h-screen", fontSans.variable)}>
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="relative flex flex-col">
             <Header />
-            <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">{children}</main>
+            <main className="container mx-auto max-w-7xl py-8 px-6 flex-grow">{children}</main>
           </div>
         </Providers>
       </body>

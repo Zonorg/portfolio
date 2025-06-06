@@ -5,7 +5,7 @@ import Link from "next/link";
 import { IoOpenOutline } from "react-icons/io5";
 
 export const ProjectCard = ({ src, alt, link, title, description }: IProject) => (
-  <Link href={link} target="_blank">
+  <Link href={link} target="_blank" className="text-center flex flex-col gap-2">
     <div className="project_card flex flex-col justify-center items-center gap-3">
       <div className="hover:scale-105 transition ease-in-out duration-300 relative">
         <Image
@@ -22,5 +22,6 @@ export const ProjectCard = ({ src, alt, link, title, description }: IProject) =>
         </div>
       </div>
     </div>
+    <h3 className="text-lg font-semibold hover:text-pink-600 transition">{title}</h3>
   </Link>
 );

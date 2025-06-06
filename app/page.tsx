@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <div className="home_content flex-col gap-5">
-      <div className="animate-translateUp flex flex-col gap-5">
+      <div className="animate-translateUp flex flex-col gap-5 mb-16">
         <h1 className="text-8xl font-semibold max-md:text-5xl">Web developer</h1>
         <div className="mt-8 flex items-center gap-5 max-md:flex-col-reverse max-md:items-start">
           <video src="/home-video.mp4" autoPlay muted loop playsInline className="rounded-xl max-lg:hidden w-1/2" />
@@ -36,6 +36,7 @@ export default function Home() {
         </div>
       </div>
       <About />
+
       <div id="projects" className="mt-16">
         <h2 className="font-medium text-3xl">Made with</h2>
         <div className="flex gap-4 flex-wrap">
@@ -44,14 +45,15 @@ export default function Home() {
             alt="React logo"
             width={150}
             height={150}
-            className="w-auto object-contain"
+            className="object-contain"
           />
+          <Image src="/logos/nextjs-logo.webp" alt="Node logo" width={120} height={120} className="object-contain" />
           <Image
             src={theme === "light" ? "/logos/node-logo.webp" : "/logos/node-logo-blanco.webp"}
             alt="Node logo"
-            width={150}
-            height={150}
-            className="w-auto object-contain"
+            width={120}
+            height={120}
+            className="object-contain"
           />
         </div>
         <ReactProjects />
@@ -62,28 +64,28 @@ export default function Home() {
             alt="PHP logo"
             width={100}
             height={100}
-            className="w-auto object-contain"
+            className="object-contain"
           />
-          <Image
+          {/* <Image
             src={theme === "light" ? "/logos/laravel-logo.webp" : "/logos/laravel-logo-blanco.webp"}
             alt="Laravel logo"
             width={150}
             height={150}
-            className="w-auto object-contain"
-          />
+            
+          /> */}
           <Image
             src={theme === "light" ? "/logos/wordpress-logo.webp" : "/logos/wordpress-logo-blanco.webp"}
             alt="Wordpress logo"
             width={150}
             height={150}
-            className="w-auto object-contain"
+            className="object-contain"
           />
           <Image
             src={theme === "light" ? "/logos/woocommerce-logo.webp" : "/logos/woocommerce-logo-blanco.webp"}
             alt="WooCommerce logo"
             width={150}
             height={150}
-            className="w-auto object-contain"
+            className="object-contain"
           />
         </div>
         <WordpressProjects />
@@ -93,7 +95,7 @@ export default function Home() {
           alt="Hubspot logo"
           width={150}
           height={150}
-          className="w-auto object-contain"
+          className="object-contain"
         />
         <HubspotProjects />
         <h2 className="font-medium text-3xl mt-16">Made with</h2>
@@ -102,7 +104,7 @@ export default function Home() {
           alt="Shopify logo"
           width={150}
           height={150}
-          className="w-auto"
+          className="object-contain"
         />
         <ShopifyProjects />
       </div>

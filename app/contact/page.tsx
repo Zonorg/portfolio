@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaLinkedin, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
 export default function Contact() {
   return (
@@ -25,6 +25,14 @@ export default function Contact() {
             className="text-3xl hover:text-pink-600 hover:scale-125 transition"
           >
             <FaWhatsapp />
+          </a>
+          <a
+            href="mailto:nviscio@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-3xl hover:text-pink-600 hover:scale-125 transition"
+          >
+            <FaEnvelope />
           </a>
         </div>
       </div>

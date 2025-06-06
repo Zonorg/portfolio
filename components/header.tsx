@@ -17,7 +17,7 @@ export default function Header() {
   const pathname = usePathname();
 
   // Rutas válidas
-  const validPaths = ["/", "/#about", "/#projects", "/contact"];
+  const validPaths = ["/", "/about", "/#about", "/#projects", "/contact"];
 
   // Cualquier ruta que no sea válida es una 404
   const is404Page = !validPaths.includes(pathname);
@@ -57,7 +57,7 @@ export default function Header() {
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <Link href="/#" className="header_brand flex items-center gap-x-2">
           <Image
-            src="/profile-picture.png"
+            src="/profile-picture.jpg"
             alt="Profile picture portfolio"
             width={45}
             height={45}
@@ -75,7 +75,7 @@ export default function Header() {
       <div className="hidden lg:flex gap-10">
         <ThemeSwitch />
         {generateLink("/", "Home")}
-        {generateLink("/#about", "About")} {generateLink("/#projects", "Projects")}
+        {generateLink("/about", "About")} {generateLink("/#projects", "Projects")}
         {generateLink("/contact", "Contact")}
       </div>
       <div className="lg:hidden">
